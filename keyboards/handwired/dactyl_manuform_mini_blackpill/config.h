@@ -37,8 +37,11 @@
 #define RETRO_TAPPING
 
 /* serial.c configuration for split keyboard */
-#define SOFT_SERIAL_PIN B1
-#define USE_SERIAL
+#define SOFT_SERIAL_PIN B6
+#define SELECT_SOFT_SERIAL_SPEED 1
+#define SERIAL_USART_DRIVER SD1
+#define SERIAL_USART_TX_PAL_MODE 7
+#define SERIAL_USART_TIMEOUT 20 
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
