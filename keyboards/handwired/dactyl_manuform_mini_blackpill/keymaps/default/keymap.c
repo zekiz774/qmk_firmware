@@ -314,20 +314,6 @@ qk_tap_dance_action_t tap_dance_actions[] = {
  [TD_QUOTE] = ACTION_TAP_DANCE_FN_ADVANCED (NULL, dance_quote_finished, dance_quote_reset), // ' or '' for tap/dbl
  [TD_NUMTERM] = ACTION_TAP_DANCE_FN_ADVANCED (NULL, dance_numterm_fin, dance_numterm_reset)
 };
-// Custom tapping terms
-
-#define TAPPING_TERM 250
-uint16_t get_tapping_term(uint16_t keycode) {
-  switch (keycode) {
-    case _ENTGUI:
-      return 190;
-    case _SLSHCTL:
-      return 300;
-    default:
-      return TAPPING_TERM;
-  }
-}
-
 
 void keyboard_post_init_user(void) {
   // Customise these values to desired behaviour
