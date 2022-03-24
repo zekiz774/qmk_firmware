@@ -4,18 +4,18 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
-#define DEVICE_VER      0x0001
-#define MANUFACTURER    bendalton
-#define PRODUCT         DactylMiniManuform
-#define DESCRIPTION     Mini Dactyl Manuform
+#define VENDOR_ID 0xFEED
+#define PRODUCT_ID 0x6060
+#define DEVICE_VER 0x0001
+#define MANUFACTURER bendalton
+#define PRODUCT DactylMiniManuform
+#define DESCRIPTION Mini Dactyl Manuform
 
 /* mouse config */
-#define MOUSEKEY_INTERVAL       20
-#define MOUSEKEY_DELAY          0
-#define MOUSEKEY_TIME_TO_MAX    60
-#define MOUSEKEY_MAX_SPEED      7
+#define MOUSEKEY_INTERVAL 20
+#define MOUSEKEY_DELAY 0
+#define MOUSEKEY_TIME_TO_MAX 60
+#define MOUSEKEY_MAX_SPEED 7
 #define MOUSEKEY_WHEEL_DELAY 0
 
 /* key matrix size */
@@ -23,10 +23,11 @@
 #define MATRIX_COLS 6
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { A8, A9, A10, A11, A12 }
+#define MATRIX_ROW_PINS \
+    { A8, A15, A10, B3, B4 }
 
-#define MATRIX_COL_PINS { A1, A2, A3, A4, A5, A6 }
-#define UNUSED_PINS
+#define MATRIX_COL_PINS \
+    { A1, A2, A3, A4, A5, A6 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -41,7 +42,7 @@
 #define SELECT_SOFT_SERIAL_SPEED 1
 #define SERIAL_USART_DRIVER SD1
 #define SERIAL_USART_TX_PAL_MODE 7
-#define SERIAL_USART_TIMEOUT 20 
+#define SERIAL_USART_TIMEOUT 20
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
